@@ -1,0 +1,9 @@
+services:
+  plistserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: plistserver
+    restart: unless-stopped
+    ports:
+      - "3788:3788"
